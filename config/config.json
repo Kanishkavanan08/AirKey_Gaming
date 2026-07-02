@@ -1,0 +1,97 @@
+{
+  "camera": {
+    "device_index": 0,
+    "api_preference": 700,
+    "target_width": 640,
+    "target_height": 480,
+    "target_fps": 30,
+    "auto_exposure": true,
+    "brightness_compensation": true
+  },
+  "detection": {
+    "min_detection_confidence": 0.75,
+    "min_tracking_confidence": 0.75,
+    "max_num_hands": 2,
+    "model_complexity": 1
+  },
+  "filtering": {
+    "smoothing_window_size": 5,
+    "debounce_duration_seconds": 0.15,
+    "cooldown_duration_seconds": 0.3,
+    "min_hold_duration_seconds": 0.1,
+    "landmark_velocity_threshold": 0.02
+  },
+  "key_bindings": {
+    "OPEN_PALM": {
+      "action": "Accelerate",
+      "keys": ["up"],
+      "mode": "hold"
+    },
+    "CLOSED_FIST": {
+      "action": "Brake",
+      "keys": ["down"],
+      "mode": "hold"
+    },
+    "THUMB_UP": {
+      "action": "Nitro Boost",
+      "keys": ["space"],
+      "mode": "press"
+    },
+    "PEACE_SIGN": {
+      "action": "Pause",
+      "keys": ["p"],
+      "mode": "press"
+    },
+    "POINT_RIGHT": {
+      "action": "Steer Right",
+      "keys": ["right"],
+      "mode": "hold"
+    },
+    "POINT_LEFT": {
+      "action": "Steer Left",
+      "keys": ["left"],
+      "mode": "hold"
+    },
+    "OK_SIGN": {
+      "action": "Horn",
+      "keys": ["h"],
+      "mode": "press"
+    },
+    "ROCK_SIGN": {
+      "action": "Restart",
+      "keys": ["r"],
+      "mode": "press"
+    },
+    "TWO_HANDS_OPEN": {
+      "action": "Exit Safety Loop",
+      "keys": ["escape"],
+      "mode": "press"
+    }
+  },
+  "ui": {
+    "theme": "dark",
+    "window_width": 1280,
+    "window_height": 720,
+    "show_overlay": true,
+    "show_landmarks": true,
+    "colors": {
+      "bounding_box": [0, 255, 0],
+      "landmark_connections": [220, 220, 220],
+      "landmark_points": [0, 0, 255],
+      "text_primary": [255, 255, 255],
+      "text_accent": [0, 255, 255],
+      "status_active": [0, 255, 0],
+      "status_inactive": [0, 0, 255]
+    }
+  },
+  "voice_feedback": {
+    "enabled": false,
+    "speech_rate": 150,
+    "volume": 0.8
+  },
+  "logging": {
+    "level": "INFO",
+    "log_to_file": true,
+    "log_file_path": "logs/gesture_controller.log"
+  }
+}

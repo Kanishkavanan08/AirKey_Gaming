@@ -1,0 +1,17 @@
+# Python environment and cache
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+
+# Logs and Data
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Config (optional - only if you want to keep sensitive paths private)
+# config/config.json
